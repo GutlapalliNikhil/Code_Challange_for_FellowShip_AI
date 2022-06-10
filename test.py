@@ -69,7 +69,8 @@ def main(args):
     config = json.load(open(args.config))
     config['imgsize'] = (args.imgsize, args.imgsize)
 
-    modelpath = os.path.dirname(args.config)
+    exp_dir = os.path.dirname(args.config)
+    modelpath = args.weights
 
     class_names = load_class_names()
     num_classes = len(class_names)
@@ -97,6 +98,8 @@ if __name__ == '__main__':
 
     parser.add_argument('--config', required=True,
                         help='path to config.json')
+    parser.add_argument('--weights', required=True,
+                        help='path to the weights file')
     parser.add_argument('--imgsize', default=400, type=int,
                         help='img size for testing (default: 400)')
 
