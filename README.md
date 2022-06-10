@@ -61,8 +61,4 @@ To use pre-trained ResNet34 on the Stanford Cars dataset, by implementing MixMat
   ```bash
   $ python3 test.py --config {PATH_TO_THE_GENERATED_CONFIG_FILE} --imgsize {IMAGE_SIZE_FOR_VALIDATION}
   ```
-  
-
-  
-
-
+  * In the config file, provide the path for the model, which you want to be loaded.
