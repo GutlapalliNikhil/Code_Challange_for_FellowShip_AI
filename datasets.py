@@ -6,7 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 
 
-def load_class_names(path='/DATA/nikhil/cars/Car-Model-Classification/data/devkit/class_names.csv'):
+def load_class_names(path='devkit/class_names.csv'):
     cn = pd.read_csv(path, header=None).values.reshape(-1)
     cn = cn.tolist()
     return cn
@@ -97,8 +97,8 @@ def prepare_loader(config):
     train_imgdir = '/DATA/nikhil/cars/stanford-cars-original/cars_train'
     test_imgdir = '/DATA/nikhil/cars/stanford-cars-original/cars_test'
 
-    train_annopath = '/DATA/nikhil/cars/Car-Model-Classification/data/devkit/cars_train_annos.csv'
-    test_annopath = '/DATA/nikhil/cars/Car-Model-Classification/data/devkit/cars_test_annos_withlabels.csv'
+    train_annopath = 'devkit/cars_train_annos.csv'
+    test_annopath = 'devkit/cars_test_annos_withlabels.csv'
 
     train_transform = transforms.Compose(
         [
