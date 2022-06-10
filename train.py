@@ -9,7 +9,6 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 from datasets import load_class_names, prepare_loader, separate_class
-from models import construct_model
 from test import test_v1, test_v2
 import numpy as np
 
