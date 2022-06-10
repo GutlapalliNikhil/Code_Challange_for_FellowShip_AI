@@ -21,4 +21,39 @@ To use pre-trained ResNet34 on the Stanford Cars dataset, by implementing MixMat
 
   5) https://github.com/facebookresearch/mixup-cifar10
 
+## Results (After training for 40 epochs):
+
+### Accuracy 
+  
+  By validating on entire validation dataset: 83%
+  
+### Trained Model (PTH File)
+
+  https://drive.google.com/file/d/11zNGW2F-me8cR0KXt02pQo64zo8DGA0L/view?usp=sharing
+  
+### 
+
+
+## Usage of the Repo:
+
+### Preparing the data:
+  
+  Need to provide the paths for the downloaded stanford cars dataset and the annotation labels files for both training and validation dataset.
+  
+### Training the model:
+
+  ```bash
+  $ python3 train.py --batch-size {BATCH_SIZE} --epochs {EPOCH_NUMBER}
+  ```
+  * For each epoch, a PTH file with the congif file would be generated and saved in the logs folder (Will be created, if there wasn't). The same files will be used for validating the model.
+ 
+### Validating the model:
+
+  ```bash
+  $ python3 test.py --config {PATH_TO_THE_GENERATED_CONFIG_FILE} --imgsize {IMAGE_SIZE_FOR_VALIDATION}
+  ```
+  
+
+  
+
 
