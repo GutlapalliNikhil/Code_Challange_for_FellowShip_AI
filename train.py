@@ -9,7 +9,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 from datasets import load_class_names, prepare_loader, separate_class
-from test import test_v1, test_v2
+from test import test_v1
 import numpy as np
 
 from torch.autograd import Variable
