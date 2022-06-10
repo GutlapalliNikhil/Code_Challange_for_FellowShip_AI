@@ -69,8 +69,7 @@ def main(args):
     config = json.load(open(args.config))
     config['imgsize'] = (args.imgsize, args.imgsize)
 
-    exp_dir = os.path.dirname(args.config)
-    modelpath = exp_dir + '/best.pth'
+    modelpath = os.path.dirname(args.config)
 
     class_names = load_class_names()
     num_classes = len(class_names)
