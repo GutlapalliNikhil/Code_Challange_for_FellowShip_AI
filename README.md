@@ -31,8 +31,17 @@ To use pre-trained ResNet34 on the Stanford Cars dataset, by implementing MixMat
 
   https://drive.google.com/file/d/11zNGW2F-me8cR0KXt02pQo64zo8DGA0L/view?usp=sharing
   
-### 
+### Training Loss and Accuracy Graphs
 
+  ![training_loss](https://user-images.githubusercontent.com/33520288/173075615-823b9756-5022-4a4e-8e5b-d545220249df.png)
+  
+  ![training_accuracy](https://user-images.githubusercontent.com/33520288/173075657-0f18f2f1-c098-497d-bd97-7e49218f0353.png)
+
+### Validation Loss and Accuracy Graphs
+
+  ![validation loss](https://user-images.githubusercontent.com/33520288/173075806-dbd3cb8f-4e94-43d6-b72d-96bdbd79c449.png)
+
+  ![validation acc](https://user-images.githubusercontent.com/33520288/173075833-a73a194e-d51d-401c-9632-855d36229f32.png)
 
 ## Usage of the Repo:
 
