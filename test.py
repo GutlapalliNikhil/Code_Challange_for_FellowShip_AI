@@ -8,7 +8,6 @@ import torch.nn.functional as F
 import time
 
 from datasets import load_class_names, separate_class, prepare_loader
-from models import construct_model
 
 import torchvision.models as models
 import torch.nn as nn
